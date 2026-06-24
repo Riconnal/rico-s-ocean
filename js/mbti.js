@@ -380,8 +380,8 @@ function showResult(type) {
   questionCard.innerHTML = `
     <div class="result-header">
       <div class="result-info">
-        <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
+        <div class="result-type">${data.mbti}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
@@ -397,8 +397,8 @@ function renderAllTypes() {
   const careers = Object.entries(mbtiResults);
   grid.innerHTML = careers.map(([code, data]) => `
     <div class="type-item" data-type="${code}" onclick="showTypeInfo('${code}')">
-      <div class="type-item-mbti">${data.mbti}</div>
       <div class="type-item-name">${data.name}</div>
+      <div class="type-item-mbti">${data.mbti}</div>
       <div class="type-item-slogan">${data.slogan}</div>
     </div>
   `).join('');
@@ -411,8 +411,8 @@ function showTypeInfo(type) {
   resultCard.innerHTML = `
     <div class="result-header">
       <div class="result-info">
-        <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
+        <div class="result-type">${data.mbti}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
@@ -460,8 +460,8 @@ function highlightResultType(type) {
   resultDisplay.innerHTML = `
     <div class="result-header">
       <div class="result-info">
-        <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
+        <div class="result-type">${data.mbti}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
