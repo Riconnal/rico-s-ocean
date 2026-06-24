@@ -845,9 +845,9 @@
 }
 
 .type-item {
-  padding: 24px 16px;
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 28px 16px;
+  background: rgba(13, 8, 32, 0.85);
+  border: 1px solid rgba(126, 77, 244, 0.3);
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -855,13 +855,13 @@
 
 .type-item:hover {
   border-color: var(--primary-purple);
-  background: rgba(126, 77, 244, 0.15);
+  background: rgba(20, 12, 50, 0.95);
   transform: translateY(-4px);
 }
 
 .type-item.active {
   border-color: var(--cyan-blue);
-  background: rgba(82, 186, 231, 0.15);
+  background: rgba(15, 25, 50, 0.95);
 }
 
 .type-item-mbti {
@@ -878,13 +878,13 @@
 .type-item-name {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .type-item-slogan {
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.7);
   font-style: italic;
 }
 
