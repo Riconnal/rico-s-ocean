@@ -925,7 +925,7 @@
   padding: calc(100% / 16);
   box-sizing: border-box;
   background-image: url('../assets/images/card-border-pattern.svg');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
