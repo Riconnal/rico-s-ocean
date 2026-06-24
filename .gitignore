@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Thumbnails
+._*
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Large font/audio/video files (optional - uncomment if needed)
+# assets/fonts/*.otf
+# assets/audio/*.m4a
+# assets/videos/*.webm

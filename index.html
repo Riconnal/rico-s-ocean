@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人作品集 | Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="bg-video-container">
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="">
+      <source src="assets/videos/basic_loop_bg_2.webm" type="video/webm">
+    </video>
+  </div>
+
+  <button id="bgm-toggle" aria-label="背景音乐开关">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+  </button>
+
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <h1 class="hero-title">CREATIVE<br>WORLD</h1>
+      <p class="hero-subtitle">探索 · 创造 · 无限可能</p>
+      <div class="hero-cta">
+        <a href="#worldview" class="btn btn-primary">开始探索</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>向下滚动</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <section id="worldview" class="section">
+    <div class="section-inner">
+      <div class="worldview-content">
+        <div class="worldview-text fade-in">
+          <h2>世界观</h2>
+          <p>
+            在这个数字与想象交织的世界里，每一个创意都是一颗星辰，
+            照亮着未知的疆域。我们相信艺术与技术的融合能够创造出超越现实的体验。
+          </p>
+          <p>
+            从虚无到存在，从构想到实现，每一步都是对边界的探索。
+            在这里，你将看到一个创作者眼中的世界——一个充满色彩、
+            声音与情感的多维空间。
+          </p>
+          <p>
+            欢迎来到我的创意宇宙。准备好了吗？让我们一起踏上这段奇妙的旅程。
+          </p>
+        </div>
+        <div class="worldview-visual fade-in">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mbti-test" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">性格测试</h2>
+      <div class="mbti-container fade-in">
+        <div class="mbti-progress">
+          <div class="mbti-progress-bar" id="mbti-progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="glass-card mbti-question-card" id="mbti-question-card">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mbti-results" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">全部人格类型</h2>
+      <div class="results-container">
+        <div class="result-card fade-in" id="result-display">
+          <div class="result-type">INTJ</div>
+          <div class="result-name">建筑师</div>
+          <div class="result-description">
+            富有想象力和战略性思维的思想家，一切皆在计划之中。
+          </div>
+          <div class="result-traits">
+            <span class="result-trait">战略思维</span>
+            <span class="result-trait">独立自主</span>
+            <span class="result-trait">高标准</span>
+          </div>
+        </div>
+        <div class="all-types-grid fade-in" id="all-types-grid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">作品展示</h2>
+      <div class="gallery-grid fade-in">
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #7E4DF4 0%, #96AEFE 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">梦境花园</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">插画</span>
+              <span class="art-card-tag">概念设计</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #52BAE7 0%, #7E4DF4 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">星际漫游</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">3D</span>
+              <span class="art-card-tag">科幻</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #4228FF 0%, #52BAE7 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">霓虹都市</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">赛博朋克</span>
+              <span class="art-card-tag">场景</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #96AEFE 0%, #7E4DF4 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">深海幻想</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">插画</span>
+              <span class="art-card-tag">奇幻</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #7E4DF4 0%, #4228FF 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">机械心脏</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">3D</span>
+              <span class="art-card-tag">机械</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #52BAE7 0%, #96AEFE 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">光之使者</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">角色设计</span>
+              <span class="art-card-tag">原画</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #4228FF 0%, #7E4DF4 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">像素记忆</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">像素风</span>
+              <span class="art-card-tag">复古</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #96AEFE 0%, #52BAE7 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">云端之城</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">场景</span>
+              <span class="art-card-tag">概念设计</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #7E4DF4 0%, #52BAE7 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">时间旅行者</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">角色设计</span>
+              <span class="art-card-tag">科幻</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #4228FF 0%, #96AEFE 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">寂静森林</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">插画</span>
+              <span class="art-card-tag">自然</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #52BAE7 0%, #4228FF 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">未来战士</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">3D</span>
+              <span class="art-card-tag">角色</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-card">
+          <div class="art-card-image" style="background: linear-gradient(135deg, #96AEFE 0%, #4228FF 100%);"></div>
+          <div class="art-card-overlay">
+            <div class="art-card-title">魔法书</div>
+            <div class="art-card-tags">
+              <span class="art-card-tag">道具设计</span>
+              <span class="art-card-tag">奇幻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-selector" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">视频选集</h2>
+      <div class="video-selector-wrapper fade-in">
+        <div class="video-player-container">
+          <video id="main-video-player" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-selector-thumbs" id="video-thumbs">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-video" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">精选作品</h2>
+      <div class="featured-video-wrapper fade-in">
+        <div class="featured-video-container" id="featured-video-container">
+        </div>
+        <div class="featured-video-info">
+          <h3 class="featured-video-title" id="featured-video-title"></h3>
+          <p class="featured-video-desc" id="featured-video-desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-nav" class="section">
+    <div class="section-inner">
+      <div class="footer-content fade-in">
+        <div class="footer-logo">CREATIVE WORLD</div>
+        <p class="footer-tagline">感谢你的浏览，期待与你相遇</p>
+        
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">返回顶部</a>
+          <a href="#gallery" class="footer-link">作品画廊</a>
+          <a href="#mbti-test" class="footer-link">性格测试</a>
+          <button class="footer-link">关于我</button>
+          <button class="footer-link">联系方式</button>
+          <button class="footer-link">合作咨询</button>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="微博">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="B站">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="小红书">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="邮箱">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>© 2026 Creative World. All rights reserved. | 用热爱创造每一个瞬间</p>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/mbti.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/bgm.js"></script>
+</body>
+</html>
