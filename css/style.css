@@ -597,7 +597,7 @@
 }
 
 .mbti-option {
-  padding: 28px 32px;
+  padding: 24px 32px 24px 56px;
   background: var(--bg-card);
   border: 2px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -607,6 +607,7 @@
   text-align: left;
   position: relative;
   overflow: hidden;
+  line-height: 1.7;
 }
 
 .mbti-option::before {
@@ -632,16 +633,17 @@
 }
 
 .mbti-option-letter {
-  display: inline-flex;
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   background: var(--gradient-primary);
   font-weight: 700;
   font-size: 0.85rem;
-  margin-right: 12px;
-  vertical-align: middle;
 }
 
 /* ========== MBTI RESULTS SECTION ========== */
@@ -709,7 +711,7 @@
 .result-name {
   font-size: 3.5rem;
   font-weight: 800;
-  background: var(--gradient-accent);
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #c7d2fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -870,7 +872,7 @@
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 800;
-  background: var(--gradient-accent);
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
