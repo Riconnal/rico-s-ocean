@@ -900,24 +900,43 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 24px;
 }
 
 .art-card {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 3/4;
+  aspect-ratio: 32 / 48;
   cursor: pointer;
   transition: all 0.4s ease;
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #1a0f3d;
+  padding: 12px;
 }
 
 .art-card:hover {
   transform: translateY(-8px);
-  border-color: var(--primary-purple);
   box-shadow: 0 20px 60px rgba(126, 77, 244, 0.3);
+}
+
+.art-card-inner-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.art-card-inner-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: calc(100% / 16) solid transparent;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%232a1a5e"/><path d="M0 0h40v40H0z" fill="url(%23g)"/><defs><pattern id="g" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="%233d2a7a"/><path d="M0 0h2v2H0zM2 2h2v2H2z" fill="%232a1a5e"/></pattern></defs></svg>') 1 stretch;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .art-card-image {
@@ -935,35 +954,39 @@
 .art-card-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 24px;
-  background: linear-gradient(transparent, rgba(13, 8, 32, 0.95));
-  transform: translateY(60%);
-  transition: transform 0.4s ease;
+  left: 12px;
+  right: 12px;
+  padding: 20px 16px;
+  background: linear-gradient(transparent, rgba(13, 8, 32, 0.98));
+  z-index: 3;
 }
 
-.art-card:hover .art-card-overlay {
-  transform: translateY(0);
+.art-card-subtitle {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.art-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .art-card-title {
   font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.art-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.art-card-tag {
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  background: rgba(126, 77, 244, 0.3);
+.art-card-rarity {
+  font-size: 0.85rem;
+  font-weight: 700;
   color: var(--light-blue-purple);
+  letter-spacing: 1px;
 }
 
 /* ========== VIDEO SELECTOR SECTION ========== */
@@ -1234,7 +1257,7 @@
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }
 
