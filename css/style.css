@@ -911,7 +911,7 @@
   cursor: pointer;
   transition: all 0.4s ease;
   background: #1a0f3d;
-  padding: 12px;
+  padding: 10px;
 }
 
 .art-card:hover {
@@ -924,19 +924,12 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-}
-
-.art-card-inner-frame::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: calc(100% / 16) solid transparent;
-  border-image: url('../assets/images/card-border-pattern.svg') 200 stretch;
-  pointer-events: none;
-  z-index: 2;
+  padding: calc(100% / 16);
+  box-sizing: border-box;
+  background-image: url('../assets/images/card-border-pattern.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .art-card-image {
