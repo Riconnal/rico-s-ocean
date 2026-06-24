@@ -934,7 +934,7 @@
   right: 0;
   bottom: 0;
   border: calc(100% / 16) solid transparent;
-  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%232a1a5e"/><path d="M0 0h40v40H0z" fill="url(%23g)"/><defs><pattern id="g" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="%233d2a7a"/><path d="M0 0h2v2H0zM2 2h2v2H2z" fill="%232a1a5e"/></pattern></defs></svg>') 1 stretch;
+  border-image: url('../assets/images/card-border-pattern.svg') 200 stretch;
   pointer-events: none;
   z-index: 2;
 }
