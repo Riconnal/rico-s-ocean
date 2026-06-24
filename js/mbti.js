@@ -347,34 +347,13 @@ function showResult(type) {
 
   questionCard.innerHTML = `
     <div class="result-header">
-      <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
-      </div>
       <div class="result-info">
         <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
-    </div>
-    <div class="result-description">${data.description}</div>
-    <div class="result-traits">
-      ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
-    </div>
-    <div class="result-outputs">
-      <h4 class="outputs-title">工作产出倾向</h4>
-      <div class="outputs-grid">
-        ${data.outputs.map(output => `
-          <div class="output-item">
-            <div class="output-image">
-              <img src="${output.image}" alt="${output.titleCN}">
-              <span class="output-rarity rarity-${output.rarity}">${output.rarity}</span>
-            </div>
-            <div class="output-info">
-              <div class="output-title-cn">${output.titleCN}</div>
-              <div class="output-title-en">${output.titleEN}</div>
-            </div>
-          </div>
-        `).join('')}
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
       </div>
     </div>
     <button class="btn btn-outline" style="margin-top: 32px;" onclick="resetMBTI()">重新测试</button>
@@ -399,19 +378,16 @@ function showTypeInfo(type) {
   
   resultCard.innerHTML = `
     <div class="result-header">
-      <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
-      </div>
       <div class="result-info">
         <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+      </div>
     </div>
     <div class="result-description">${data.description}</div>
-    <div class="result-traits">
-      ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
-    </div>
     <div class="result-outputs">
       <h4 class="outputs-title">工作产出倾向</h4>
       <div class="outputs-grid">
@@ -451,19 +427,16 @@ function highlightResultType(type) {
   const data = mbtiResults[type];
   resultDisplay.innerHTML = `
     <div class="result-header">
-      <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
-      </div>
       <div class="result-info">
         <div class="result-type">${data.mbti}</div>
         <div class="result-name">${data.name}</div>
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+      </div>
     </div>
     <div class="result-description">${data.description}</div>
-    <div class="result-traits">
-      ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
-    </div>
     <div class="result-outputs">
       <h4 class="outputs-title">工作产出倾向</h4>
       <div class="outputs-grid">
