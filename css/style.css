@@ -940,7 +940,7 @@
 
 .art-card-overlay {
   position: absolute;
-  bottom: 0;
+  bottom: calc(100% / 24);
   left: calc(100% / 16);
   right: calc(100% / 16);
   padding: 20px 16px;
