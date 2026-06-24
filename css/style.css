@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'HarmonyOS Sans';
-  src: url('../assets/fonts/HarmonyOS_Sans_Light.otf') format('opentype');
+  src: url('../assets/fonts/HarmonyOS_Sans_SC_Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'HarmonyOS Sans';
-  src: url('../assets/fonts/HarmonyOS_Sans_Regular.otf') format('opentype');
+  src: url('../assets/fonts/HarmonyOS_Sans_SC_Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'HarmonyOS Sans';
-  src: url('../assets/fonts/HarmonyOS_Sans_Bold.otf') format('opentype');
+  src: url('../assets/fonts/HarmonyOS_Sans_SC_Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -240,12 +240,18 @@
   font-size: clamp(3rem, 10vw, 7rem);
   font-weight: 800;
   margin-bottom: 24px;
-  background: var(--gradient-accent);
+  background: linear-gradient(135deg, #ffffff 0%, #e0d4ff 30%, #b8a2ff 60%, #96AEFE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -2px;
   animation: title-reveal 1.2s ease-out forwards;
+}
+
+.hero-title-sub {
+  font-size: 0.45em;
+  font-weight: 400;
+  letter-spacing: 8px;
 }
 
 .hero-subtitle {
