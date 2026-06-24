@@ -326,6 +326,26 @@ function selectOption(value) {
   renderQuestion();
 }
 
+// 16种MBTI到8种职业的映射
+const mbtiToCareer = {
+  "INTJ": "INTJ",
+  "INTP": "INTP",
+  "ENTJ": "ENTJ",
+  "ENTP": "ENTJ",
+  "INFJ": "INFJ",
+  "INFP": "INFJ",
+  "ENFJ": "ENFP",
+  "ENFP": "ENFP",
+  "ISTJ": "INTJ",
+  "ISFJ": "ISFJ",
+  "ESTJ": "ENTJ",
+  "ESFJ": "ESFP",
+  "ISTP": "INTP",
+  "ISFP": "ISFJ",
+  "ESTP": "ESTP",
+  "ESFP": "ESFP"
+};
+
 function calculateResult() {
   const progressBar = document.getElementById('mbti-progress-bar');
   progressBar.style.width = '100%';
@@ -336,9 +356,12 @@ function calculateResult() {
   result += answers.T >= answers.F ? 'T' : 'F';
   result += answers.J >= answers.P ? 'J' : 'P';
 
-  userResult = result;
-  showResult(result);
-  highlightResultType(result);
+  // 映射到8种职业类型
+  const careerType = mbtiToCareer[result] || "INTJ";
+
+  userResult = careerType;
+  showResult(careerType);
+  highlightResultType(careerType);
 }
 
 function showResult(type) {
