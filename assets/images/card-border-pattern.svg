@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="480" viewBox="0 0 320 480">
   <defs>
     <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="25%" style="stop-color:#c8a8ff;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#c8a8ff;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#7E4DF4;stop-opacity:1" />
-      <stop offset="75%" style="stop-color:#52BAE7;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#52BAE7;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -17,16 +17,22 @@
       <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#52BAE7;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#52BAE7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#96AEFE;stop-opacity:1" />
+    </linearGradient>
     <filter id="blur">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
     </filter>
   </defs>
-  <rect width="200" height="200" fill="#1a0a3a"/>
+  <rect width="320" height="480" fill="#1a0a3a"/>
   <g filter="url(#blur)">
-    <ellipse cx="100" cy="25" rx="120" ry="25" fill="url(#g1)" opacity="0.95"/>
-    <ellipse cx="80" cy="70" rx="140" ry="30" fill="url(#g2)" opacity="0.8"/>
-    <ellipse cx="120" cy="110" rx="130" ry="28" fill="url(#g3)" opacity="0.95"/>
-    <ellipse cx="90" cy="150" rx="150" ry="25" fill="url(#g1)" opacity="0.8"/>
-    <ellipse cx="110" cy="185" rx="130" ry="30" fill="url(#g2)" opacity="0.95"/>
+    <ellipse cx="160" cy="50" rx="200" ry="50" fill="url(#g1)" opacity="0.95"/>
+    <ellipse cx="120" cy="140" rx="220" ry="55" fill="url(#g2)" opacity="0.8"/>
+    <ellipse cx="200" cy="220" rx="210" ry="50" fill="url(#g3)" opacity="0.95"/>
+    <ellipse cx="140" cy="300" rx="230" ry="55" fill="url(#g4)" opacity="0.8"/>
+    <ellipse cx="180" cy="380" rx="220" ry="50" fill="url(#g1)" opacity="0.95"/>
+    <ellipse cx="160" cy="450" rx="200" ry="55" fill="url(#g2)" opacity="0.85"/>
   </g>
 </svg>
