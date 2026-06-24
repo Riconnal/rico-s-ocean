@@ -55,23 +55,232 @@ const mbtiQuestions = [
   }
 ];
 
+// 8种职业数据
 const mbtiResults = {
-  "INTJ": { name: "建筑师", description: "富有想象力和战略性思维的思想家，一切皆在计划之中。", traits: ["战略思维", "独立自主", "高标准"] },
-  "INTP": { name: "逻辑学家", description: "具有创造力的发明家，对知识有着永无止境的渴望。", traits: ["分析能力", "创新思维", "客观理性"] },
-  "ENTJ": { name: "指挥官", description: "大胆、富有想象力且意志坚强的领导者，总能找到或创造解决办法。", traits: ["领导力", "果断", "战略眼光"] },
-  "ENTP": { name: "辩论家", description: "聪明好奇的思想家，不会放过任何智力挑战。", traits: ["机智", "创新", "辩才"] },
-  "INFJ": { name: "提倡者", description: "安静而神秘，同时鼓舞人心且不知疲倦的理想主义者。", traits: ["洞察力", "理想主义", "有原则"] },
-  "INFP": { name: "调停者", description: "诗意、善良的利他主义者，总是热情地为正当理由提供帮助。", traits: ["共情", "创造力", "理想主义"] },
-  "ENFJ": { name: "主人公", description: "富有魅力且鼓舞人心的领导者，有使听众着迷的能力。", traits: ["魅力", "感染力", "利他"] },
-  "ENFP": { name: "竞选者", description: "热情、有创造力、社交自由的人，总能找到微笑的理由。", traits: ["热情", "创造力", "乐观"] },
-  "ISTJ": { name: "物流师", description: "实际且注重事实的个人，可靠性不容怀疑。", traits: ["可靠", "负责", "务实"] },
-  "ISFJ": { name: "守卫者", description: "非常专注且温暖的守护者，时刻准备着保护爱着的人。", traits: ["忠诚", "体贴", "可靠"] },
-  "ESTJ": { name: "总经理", description: "出色的管理者，在管理事情或人方面无与伦比。", traits: ["组织能力", "务实", "果断"] },
-  "ESFJ": { name: "执政官", description: "极有同情心、爱社交的人，总是热心帮助别人。", traits: ["热心", "社交", "忠诚"] },
-  "ISTP": { name: "鉴赏家", description: "大胆而实际的实验家，擅长使用各种工具。", traits: ["动手能力", "冷静", "灵活"] },
-  "ISFP": { name: "探险家", description: "灵活有魅力的艺术家，时刻准备探索新事物。", traits: ["艺术感", "温和", "适应性强"] },
-  "ESTP": { name: "企业家", description: "聪明、精力充沛且善于感知的人，真心享受冒险的生活。", traits: ["行动力", "敏锐", "魅力"] },
-  "ESFP": { name: "表演者", description: "自发的、精力充沛的表演者，生活永远不会在他们身边感到无聊。", traits: ["热情", "乐观", "表演天赋"] }
+  "INTJ": { 
+    name: "战略指挥官", 
+    mbti: "INTJ",
+    avatar: "assets/images/careers/strategic-commander.png",
+    slogan: "一切皆在计划之中",
+    description: "富有想象力和战略性思维的思想家，擅长制定长期规划并推动目标实现。",
+    traits: ["战略思维", "独立自主", "高标准"],
+    outputs: [
+      {
+        image: "assets/images/outputs/strategic-1.png",
+        titleCN: "战略蓝图",
+        titleEN: "Strategic Blueprint",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/strategic-2.png",
+        titleCN: "决策树图",
+        titleEN: "Decision Tree",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/strategic-3.png",
+        titleCN: "预测模型",
+        titleEN: "Forecast Model",
+        rarity: "R"
+      }
+    ]
+  },
+  "ENFP": { 
+    name: "创意策划师", 
+    mbti: "ENFP",
+    avatar: "assets/images/careers/creative-planner.png",
+    slogan: "灵感点燃无限可能",
+    description: "热情、有创造力的策划者，总能带来新颖的想法和解决方案。",
+    traits: ["热情", "创造力", "乐观"],
+    outputs: [
+      {
+        image: "assets/images/outputs/creative-1.png",
+        titleCN: "创意提案",
+        titleEN: "Creative Proposal",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/creative-2.png",
+        titleCN: "头脑风暴",
+        titleEN: "Brainstorming",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/creative-3.png",
+        titleCN: "灵感收集",
+        titleEN: "Inspiration Board",
+        rarity: "R"
+      }
+    ]
+  },
+  "INFJ": { 
+    name: "心灵导师", 
+    mbti: "INFJ",
+    avatar: "assets/images/careers/soul-guide.png",
+    slogan: "洞察人心的灯塔",
+    description: "安静而神秘，富有洞察力的导师，能够理解他人的深层需求。",
+    traits: ["洞察力", "理想主义", "有原则"],
+    outputs: [
+      {
+        image: "assets/images/outputs/soul-1.png",
+        titleCN: "心灵对话",
+        titleEN: "Soul Dialogue",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/soul-2.png",
+        titleCN: "情感分析",
+        titleEN: "Emotional Analysis",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/soul-3.png",
+        titleCN: "成长路径",
+        titleEN: "Growth Path",
+        rarity: "R"
+      }
+    ]
+  },
+  "INTP": { 
+    name: "逻辑架构师", 
+    mbti: "INTP",
+    avatar: "assets/images/careers/logic-architect.png",
+    slogan: "构建完美的逻辑世界",
+    description: "具有创造力的发明家，对知识有着永无止境的渴望，擅长构建复杂系统。",
+    traits: ["分析能力", "创新思维", "客观理性"],
+    outputs: [
+      {
+        image: "assets/images/outputs/logic-1.png",
+        titleCN: "系统架构",
+        titleEN: "System Architecture",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/logic-2.png",
+        titleCN: "算法设计",
+        titleEN: "Algorithm Design",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/logic-3.png",
+        titleCN: "流程优化",
+        titleEN: "Process Optimization",
+        rarity: "R"
+      }
+    ]
+  },
+  "ENTJ": { 
+    name: "变革领导者", 
+    mbti: "ENTJ",
+    avatar: "assets/images/careers/change-leader.png",
+    slogan: "引领变革的先锋",
+    description: "大胆、富有想象力且意志坚强的领导者，总能找到或创造解决办法。",
+    traits: ["领导力", "果断", "战略眼光"],
+    outputs: [
+      {
+        image: "assets/images/outputs/leader-1.png",
+        titleCN: "变革蓝图",
+        titleEN: "Transformation Blueprint",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/leader-2.png",
+        titleCN: "团队规划",
+        titleEN: "Team Planning",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/leader-3.png",
+        titleCN: "目标分解",
+        titleEN: "Goal Decomposition",
+        rarity: "R"
+      }
+    ]
+  },
+  "ESFP": { 
+    name: "舞台表演者", 
+    mbti: "ESFP",
+    avatar: "assets/images/careers/stage-performer.png",
+    slogan: "让世界为你喝彩",
+    description: "自发的、精力充沛的表演者，生活永远不会在他们身边感到无聊。",
+    traits: ["热情", "乐观", "表演天赋"],
+    outputs: [
+      {
+        image: "assets/images/outputs/stage-1.png",
+        titleCN: "表演策划",
+        titleEN: "Performance Plan",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/stage-2.png",
+        titleCN: "舞台设计",
+        titleEN: "Stage Design",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/stage-3.png",
+        titleCN: "观众互动",
+        titleEN: "Audience Interaction",
+        rarity: "R"
+      }
+    ]
+  },
+  "ISFJ": { 
+    name: "守护天使", 
+    mbti: "ISFJ",
+    avatar: "assets/images/careers/guardian-angel.png",
+    slogan: "默默守护，温情相伴",
+    description: "非常专注且温暖的守护者，时刻准备着保护爱着的人。",
+    traits: ["忠诚", "体贴", "可靠"],
+    outputs: [
+      {
+        image: "assets/images/outputs/guardian-1.png",
+        titleCN: "关怀计划",
+        titleEN: "Care Plan",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/guardian-2.png",
+        titleCN: "支持方案",
+        titleEN: "Support Scheme",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/guardian-3.png",
+        titleCN: "日常守护",
+        titleEN: "Daily Guardian",
+        rarity: "R"
+      }
+    ]
+  },
+  "ESTP": { 
+    name: "冒险先锋", 
+    mbti: "ESTP",
+    avatar: "assets/images/careers/adventure-pioneer.png",
+    slogan: "在冒险中寻找真相",
+    description: "聪明、精力充沛且善于感知的人，真心享受冒险的生活。",
+    traits: ["行动力", "敏锐", "魅力"],
+    outputs: [
+      {
+        image: "assets/images/outputs/adventure-1.png",
+        titleCN: "冒险策划",
+        titleEN: "Adventure Plan",
+        rarity: "SSR"
+      },
+      {
+        image: "assets/images/outputs/adventure-2.png",
+        titleCN: "危机应对",
+        titleEN: "Crisis Response",
+        rarity: "SR"
+      },
+      {
+        image: "assets/images/outputs/adventure-3.png",
+        titleCN: "实时侦察",
+        titleEN: "Real-time Recon",
+        rarity: "R"
+      }
+    ]
+  }
 };
 
 let currentQuestion = 0;
@@ -137,11 +346,36 @@ function showResult(type) {
   const data = mbtiResults[type];
 
   questionCard.innerHTML = `
-    <div class="result-type">${type}</div>
-    <div class="result-name">${data.name}</div>
+    <div class="result-header">
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+      </div>
+      <div class="result-info">
+        <div class="result-type">${data.mbti}</div>
+        <div class="result-name">${data.name}</div>
+        <div class="result-slogan">"${data.slogan}"</div>
+      </div>
+    </div>
     <div class="result-description">${data.description}</div>
     <div class="result-traits">
       ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
+    </div>
+    <div class="result-outputs">
+      <h4 class="outputs-title">工作产出倾向</h4>
+      <div class="outputs-grid">
+        ${data.outputs.map(output => `
+          <div class="output-item">
+            <div class="output-image">
+              <img src="${output.image}" alt="${output.titleCN}">
+              <span class="output-rarity rarity-${output.rarity}">${output.rarity}</span>
+            </div>
+            <div class="output-info">
+              <div class="output-title-cn">${output.titleCN}</div>
+              <div class="output-title-en">${output.titleEN}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
     </div>
     <button class="btn btn-outline" style="margin-top: 32px;" onclick="resetMBTI()">重新测试</button>
   `;
@@ -149,10 +383,12 @@ function showResult(type) {
 
 function renderAllTypes() {
   const grid = document.getElementById('all-types-grid');
-  grid.innerHTML = Object.entries(mbtiResults).map(([code, data]) => `
+  const careers = Object.entries(mbtiResults);
+  grid.innerHTML = careers.map(([code, data]) => `
     <div class="type-item" data-type="${code}" onclick="showTypeInfo('${code}')">
-      <div class="type-item-code">${code}</div>
+      <div class="type-item-mbti">${data.mbti}</div>
       <div class="type-item-name">${data.name}</div>
+      <div class="type-item-slogan">${data.slogan}</div>
     </div>
   `).join('');
 }
@@ -162,11 +398,36 @@ function showTypeInfo(type) {
   const resultCard = document.getElementById('result-display');
   
   resultCard.innerHTML = `
-    <div class="result-type">${type}</div>
-    <div class="result-name">${data.name}</div>
+    <div class="result-header">
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+      </div>
+      <div class="result-info">
+        <div class="result-type">${data.mbti}</div>
+        <div class="result-name">${data.name}</div>
+        <div class="result-slogan">"${data.slogan}"</div>
+      </div>
+    </div>
     <div class="result-description">${data.description}</div>
     <div class="result-traits">
       ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
+    </div>
+    <div class="result-outputs">
+      <h4 class="outputs-title">工作产出倾向</h4>
+      <div class="outputs-grid">
+        ${data.outputs.map(output => `
+          <div class="output-item">
+            <div class="output-image">
+              <img src="${output.image}" alt="${output.titleCN}">
+              <span class="output-rarity rarity-${output.rarity}">${output.rarity}</span>
+            </div>
+            <div class="output-info">
+              <div class="output-title-cn">${output.titleCN}</div>
+              <div class="output-title-en">${output.titleEN}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
     </div>
   `;
 
@@ -189,11 +450,36 @@ function highlightResultType(type) {
   const resultDisplay = document.getElementById('result-display');
   const data = mbtiResults[type];
   resultDisplay.innerHTML = `
-    <div class="result-type">${type}</div>
-    <div class="result-name">${data.name}</div>
+    <div class="result-header">
+      <div class="result-avatar">
+        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+      </div>
+      <div class="result-info">
+        <div class="result-type">${data.mbti}</div>
+        <div class="result-name">${data.name}</div>
+        <div class="result-slogan">"${data.slogan}"</div>
+      </div>
+    </div>
     <div class="result-description">${data.description}</div>
     <div class="result-traits">
       ${data.traits.map(t => `<span class="result-trait">${t}</span>`).join('')}
+    </div>
+    <div class="result-outputs">
+      <h4 class="outputs-title">工作产出倾向</h4>
+      <div class="outputs-grid">
+        ${data.outputs.map(output => `
+          <div class="output-item">
+            <div class="output-image">
+              <img src="${output.image}" alt="${output.titleCN}">
+              <span class="output-rarity rarity-${output.rarity}">${output.rarity}</span>
+            </div>
+            <div class="output-info">
+              <div class="output-title-cn">${output.titleCN}</div>
+              <div class="output-title-en">${output.titleEN}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
     </div>
   `;
 }
