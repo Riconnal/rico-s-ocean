@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跃动海洋 | LEAP OCEAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="bg-video-container">
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="">
+      <source src="assets/videos/basic_loop_bg_2.webm" type="video/webm">
+    </video>
+  </div>
+
+  <button id="bgm-toggle" aria-label="背景音乐开关">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+  </button>
+
+  <button id="menu-toggle" aria-label="导航菜单">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <div class="side-menu" id="side-menu">
+    <div class="side-menu-overlay" id="side-menu-overlay"></div>
+    <div class="side-menu-content">
+      <div class="side-menu-header">
+        <span class="side-menu-title">导航</span>
+        <button class="side-menu-close" id="side-menu-close" aria-label="关闭菜单">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="side-menu-nav">
+        <div class="menu-group">
+          <div class="menu-group-title">跃动海洋</div>
+          <ul class="menu-list">
+            <li><a href="#worldview" class="menu-link">世界观</a></li>
+            <li><a href="#mbti-test" class="menu-link">职业测试</a></li>
+            <li><a href="#mbti-results" class="menu-link">所有职业</a></li>
+            <li><a href="#gallery" class="menu-link">产物列表</a></li>
+            <li><a href="#video-selector" class="menu-link">动效展示</a></li>
+            <li><a href="#featured-video" class="menu-link">宣传视频</a></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">关于我</div>
+          <ul class="menu-list">
+            <li><a href="about.html" class="menu-link">我</a></li>
+            <li><a href="about.html#gallery" class="menu-link">我的作品</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="side-menu" id="side-menu">
+    <div class="side-menu-overlay" id="side-menu-overlay"></div>
+    <div class="side-menu-content">
+      <div class="side-menu-header">
+        <span class="side-menu-title">导航</span>
+        <button class="side-menu-close" id="side-menu-close" aria-label="关闭菜单">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="side-menu-nav">
+        <div class="menu-group">
+          <div class="menu-group-title">跃动海洋</div>
+          <ul class="menu-list">
+            <li><a href="#worldview" class="menu-link">世界观</a></li>
+            <li><a href="#mbti-test" class="menu-link">职业测试</a></li>
+            <li><a href="#mbti-results" class="menu-link">所有职业</a></li>
+            <li><a href="#gallery" class="menu-link">产物列表</a></li>
+            <li><a href="#video-selector" class="menu-link">动效展示</a></li>
+            <li><a href="#featured-video" class="menu-link">宣传视频</a></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">关于我</div>
+          <ul class="menu-list">
+            <li><a href="about.html" class="menu-link">我</a></li>
+            <li><a href="about.html#gallery" class="menu-link">我的作品</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <h1 class="hero-title">跃动海洋<br><span class="hero-title-sub">LEAP OCEAN</span></h1>
+      <p class="hero-subtitle">MOLI 分身主题交互设计</p>
+      <div class="hero-cta">
+        <a href="#worldview" class="btn btn-primary">开始探索</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>向下滚动</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <section id="worldview" class="section">
+    <div class="section-inner">
+      <div class="worldview-content">
+        <div class="worldview-text fade-in">
+          <h2>「跃动宇宙」<br>与 Moli 的重生</h2>
+          <!-- 章节标题 -->
+          <div class="chapter-header">
+            <span class="chapter-label">序章<br>深渊的回声与失落的矩阵</span>
+          </div>
+          
+          <!-- 章节正文 -->
+          <div class="chapter-content">
+            <div class="chapter-text active" data-chapter="0">
+              <p>在现实世界之外，存在着一个由数据和波长构成的平行空间——「跃动海洋」。
+这里没有传统的自然资源，维持宇宙运转的唯一能源，是现实世界中汽车在疾驰时产生的“纯粹动能”与“情绪共鸣”
+<br>
+这片海洋安静得令人窒息，但从散落在海面的各种碎片来看，
+这里曾经是完美平衡的数字乌托邦。
+<br>
+你不知道为什么这里会变成这样，但是，这片海洋将你隔离在了这片孤岛。<br>
+为了找到前进的路，只能尝试修复起这片岛和这片海洋。
+<br>
+</p>
+            </div>
+            <div class="chapter-text" data-chapter="1">
+              <p>在你的努力下，你终于冲出了囚禁你的那片初始海洋，来到了一片新的天地。<br>
+                在这里，有几位长者告诉你这片海洋的过去。<br>
+                在现实的暗面，曾存在一个完美的数字乌托邦——「Moli 跃动宇宙」。<br>
+                它遵循着至高无上的隐形科技原则：不喧哗，不突兀，在无形中静默运转。它如同现实世界的伴星，贪婪地吸收着人类在公路上疾驰时产生的纯粹动能，维持着极度平衡的运转体系。<br>
+                然而，随着现实世界数据洪流的无序膨胀，灾难降临了。宇宙底层的刚度矩阵发生降解，宏大的全息结构瞬间解体，化作了一片深邃、翻涌的暗色数据之海。海面之下，是带噪的波段与混沌的代码；海面之上，空无一物。<br>
+                为了阻止核心算力彻底流失进虚空，系统主脑在停机前的最后一秒，向这片混沌的深海投放了数以百万计的数字水下管道封堵器。它们潜入极深的数据海沟，以强大的微观抗压能力，死死封锁住了宇宙崩塌的能量泄露口。
+                <br>这些在黑暗中闪烁着微光的封堵器核心，就是最初的希望，也是 Moli 诞生的温床。
+              <br>听完这些后，你更加固定了要把这片海洋修复回原来样子的决心。
+              </p>
+            </div>
+            <div class="chapter-text" data-chapter="2">
+              <p>那些在海沟深处闪烁的封堵器核心，不仅封锁了毁灭，更在漫长的暗夜中开始彼此呼应，产生了奇妙的共振。<br>
+                在长者的指引下，你开始穿梭于破碎的礁石之间，用你双手捕获那些游离的微光。每一次触碰，都像是在死寂的乐谱上按下一个音符，带噪的波段开始变得纯净，混沌的代码重新排列组合。<br>
+                当成千上万个封堵器的核心能量汇聚到你眼前的这一刻，奇迹发生了。
+                <br>数据海面泛起层层耀眼的金色涟漪，一个由纯粹能量与流线型美学构成的生命体在光芒中缓缓睁开双眼——那是 <b>Moli</b>，跃动宇宙的灵魂化身。它没有实体，却拥有感知现实世界律动的超凡能力。
+                <br>Moli 的诞生让这片死寂的海洋第一次有了“心跳”。它围绕着你欢快地跃动，散发出的微光驱散了周围的迷雾。你明白了，你不再是孤军奋战，Moli 将是你最忠实的伙伴，而它的每一次跃动，都是向混沌宣战的号角。</p>
+            </div>
+            <div class="chapter-text" data-chapter="3">
+              <p>重构的法则已经刻在我的核心里：你在现实世界中驾驶车辆的每一次加速、每一次平顺的过弯、甚至血液里涌动的多巴胺，都会被我敏锐地捕捉。我会将这些能量转化为修复宇宙的高刚度基础粒子。
+<br><br>“听，那是现实世界引擎的脉搏。”<br><br>
+请借助这些源源不断的跨界动能，与我一起在这片暗色之海上重新搭建起支撑宇宙的骨架。从第一座能量浮岛的建立，到第一条数字公路的铺设，一个全新的、完美运转的跃动宇宙，正等待着我们亲手将其重塑。</p>
+            </div>
+          </div>
+          
+          <!-- 时间线导航 -->
+          <div class="chapter-timeline">
+            <div class="timeline-node active" data-chapter="0">
+              <div class="node-dot"></div>
+              <div class="node-label">序章</div>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-node" data-chapter="1">
+              <div class="node-dot"></div>
+              <div class="node-label">第一章</div>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-node" data-chapter="2">
+              <div class="node-dot"></div>
+              <div class="node-label">第二章</div>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-node" data-chapter="3">
+              <div class="node-dot"></div>
+              <div class="node-label">第三章</div>
+            </div>
+          </div>
+        </div>
+        <div class="worldview-visual fade-in">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mbti-test" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">和你的 Moli分身建立神经连接</h2>
+      <div class="mbti-container fade-in">
+        <div class="mbti-progress">
+          <div class="mbti-progress-bar" id="mbti-progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="glass-card mbti-question-card" id="mbti-question-card">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mbti-results" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Moli 职业一览</h2>
+      <div class="results-container">
+        <div class="result-card fade-in" id="result-display">
+          <div class="result-header">
+            <div class="result-info">
+              <div class="result-name">数据骇客</div>
+              <div class="result-type">INTP / ENTP</div>
+              <div class="result-slogan">"代码即力量，数据即信仰"</div>
+            </div>
+            <div class="result-avatar">
+              <img src="assets/images/careers/data-hacker.png" alt="数据骇客">
+            </div>
+          </div>
+          <div class="result-description">
+            对汽车电子系统有着近乎偏执的钻研精神，擅长用代码改写车辆的底层逻辑。在他们眼中，每一个ECU参数都是可以优化的变量，每一行代码都能释放隐藏的性能。
+          </div>
+          <div class="result-outputs">
+            <h4 class="outputs-title">工作产出倾向</h4>
+            <div class="outputs-grid">
+              <div class="output-item">
+                <div class="output-image">
+                  <img src="assets/images/outputs/1-3.png" alt="破译密钥">
+                  <span class="output-rarity rarity-UR">UR</span>
+                </div>
+                <div class="output-info">
+                  <div class="output-title-cn">破译密钥</div>
+                  <div class="output-title-en">Key Cracking</div>
+                </div>
+              </div>
+              <div class="output-item">
+                <div class="output-image">
+                  <img src="assets/images/outputs/1-2.png" alt="虚拟逻辑主板">
+                  <span class="output-rarity rarity-R">R</span>
+                </div>
+                <div class="output-info">
+                  <div class="output-title-cn">虚拟逻辑主板</div>
+                  <div class="output-title-en">Virtual Logic Board</div>
+                </div>
+              </div>
+              <div class="output-item">
+                <div class="output-image">
+                  <img src="assets/images/outputs/1-1.png" alt="超频芯片">
+                  <span class="output-rarity rarity-C">C</span>
+                </div>
+                <div class="output-info">
+                  <div class="output-title-cn">超频芯片</div>
+                  <div class="output-title-en">Overclocking Chipset</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all-types-grid fade-in" id="all-types-grid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">[启程 Moli]扩充包<br>产物列表</h2>
+      <div class="gallery-grid fade-in" id="gallery-grid"></div>
+      <div class="gallery-toggle-wrapper">
+        <button class="btn btn-outline gallery-toggle-btn" id="gallery-toggle-btn">
+          <span class="toggle-icon">▼</span>
+          <span class="toggle-text">展开全部 (共 40 件)</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-selector" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">动效展示</h2>
+      <div class="video-selector-wrapper fade-in">
+        <div class="video-player-container">
+          <video id="main-video-player" controls>
+            <source src="assets/videos/main.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-selector-thumbs" id="video-thumbs">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-video" class="section">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">加入跃动海洋</h2>
+      <div class="featured-video-wrapper fade-in">
+        <div class="featured-video-container" id="featured-video-container">
+        </div>
+        <div class="featured-video-info">
+          <h3 class="featured-video-title" id="featured-video-title"></h3>
+          <p class="featured-video-desc" id="featured-video-desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-nav" class="section">
+    <div class="section-inner">
+      <div class="footer-content fade-in">
+        <div class="footer-logo">LEAP OCEAN</div>
+        <p class="footer-tagline">感谢你的浏览，期待与你相遇</p>
+        
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">返回顶部</a>
+          <a href="#gallery" class="footer-link">作品画廊</a>
+          <a href="#mbti-test" class="footer-link">性格测试</a>
+        </div>        
+        <div class="footer-links">
+          <a href="about.html" class="footer-link">关于我</a>
+          <button class="footer-link">其他作品</button>
+        </div>
+
+        <div class="social-links">
+
+          <a href="https://space.bilibili.com/32767522" target="_blank" class="social-link" aria-label="B站">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.73252 2.67094C3.33229 2.28484 3.33229 1.64373 3.73252 1.25764C4.11291 0.890684 4.71552 0.890684 5.09591 1.25764L7.21723 3.30403C7.27749 3.36218 7.32869 3.4261 7.37081 3.49407H10.5789C10.6211 3.4261 10.6723 3.36218 10.7325 3.30403L12.8538 1.25764C13.2342 0.890684 13.8368 0.890684 14.2172 1.25764C14.6175 1.64373 14.6175 2.28484 14.2172 2.67094L13.364 3.49407H14C16.2091 3.49407 18 5.28493 18 7.49407V12.9996C18 15.2087 16.2091 16.9996 14 16.9996H4C1.79086 16.9996 0 15.2087 0 12.9996V7.49406C0 5.28492 1.79086 3.49407 4 3.49407H4.58579L3.73252 2.67094ZM4 5.42343C2.89543 5.42343 2 6.31886 2 7.42343V13.0702C2 14.1748 2.89543 15.0702 4 15.0702H14C15.1046 15.0702 16 14.1748 16 13.0702V7.42343C16 6.31886 15.1046 5.42343 14 5.42343H4ZM5 9.31747C5 8.76519 5.44772 8.31747 6 8.31747C6.55228 8.31747 7 8.76519 7 9.31747V10.2115C7 10.7638 6.55228 11.2115 6 11.2115C5.44772 11.2115 5 10.7638 5 10.2115V9.31747ZM12 8.31747C11.4477 8.31747 11 8.76519 11 9.31747V10.2115C11 10.7638 11.4477 11.2115 12 11.2115C12.5523 11.2115 13 10.7638 13 10.2115V9.31747C13 8.76519 12.5523 8.31747 12 8.31747Z"></path>
+            </svg>
+
+          </a>
+
+          
+          <a href="mailto:riconnal@163.com" class="social-link" aria-label="邮箱">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p> Designed by Riconnal at Jilin University. | 库瑞特. </p>
+  </div>
+
+    <script src="js/bgm.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/mbti.js"></script>
+  <script src="js/video.js"></script>
+
+</body>
+</html>
