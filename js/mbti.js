@@ -88,7 +88,7 @@ const mbtiResults = {
     mbti: "ISTJ / ESTJ",
     avatar: "assets/images/careers/kinetic-sculptor.png",
     slogan: "每一焦耳的能量，都必须精准落位。",
-    description: "跃动海洋宇宙中严谨的物理构造者。他们是秩序的化身，能够将汽车行驶时产生的狂暴物理动能，通过极其精密的手法，压缩、切割、打磨成稳定且高密度的能量模块。严谨务实的动力调校专家，坚信数据是不会说谎的。他们像雕刻家一样，精确地打磨每一个动力输出曲线，让引擎的每一滴燃油都转化为最纯粹的推进力。",
+    description: "跃动海洋宇宙中严谨的物理构造者。他们是秩序的化身，能够将汽车行驶时产生的狂暴物理动能，通过极其精密的手法，压缩、切割、打磨成稳定且高密度的能量模块。",
     outputs: [
       {
         image: "assets/images/outputs/2-3.png",
