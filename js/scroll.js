@@ -104,7 +104,7 @@ function initGallery() {
     { cn: '虚无壁垒', en: '黑洞发生器', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00031_70a0a9914c340a3e.png'  },
     { cn: '棱镜折射', en: '护盾发生器', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00032_80ce39255d87628b.png'  },
     { cn: '烈阳反甲', en: '护盾发生器', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00033_4094854db2518aa1.png'  },
-    { cn: '强磁风暴', en: '护盾发生器', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alhpa_00034_65add515481fa3de.png'  },
+    { cn: '强磁风暴', en: '护盾发生器', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00034_65add515481fa3de.png'  },
     { cn: '荧光真菌', en: '涂鸦颜料', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00035_9aab10f4cf20dcc3.png'  },
     { cn: '深渊盲区', en: '寻宝星图', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00036_7a49b6695a332de3.png'  },
     { cn: '夜城繁星', en: '观光星图', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00037_9c69f674ddc14b13.png'  },
@@ -133,53 +133,11 @@ function initGallery() {
         subtitle: extraTitles[extraIndex].en,
         title: extraTitles[extraIndex].cn,
         rarity: extraTitles[extraIndex].rarity,
+        image: extraTitles[extraIndex].image,
         gradient: gradients[gradientIndex]
       };
     }
 
-    const cardImgMap = {
-  1:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00001_c9925b0d92d8df3d.png',
-  2:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00002_e83b4f12e55110f9.png',
-  3:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00003_a736937e3cd296c1.png',
-  4:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00004_de9fe14559f8d88b.png',
-  5:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00005_ba17987f4c453498.png',
-  6:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00006_a09a239c5903ebb8.png',
-  7:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00007_83de5d8c2255c896.png',
-  8:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00008_420db83e8ef8fbd3.png',
-  9:  'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00009_b735fe9dd987ccce.png',
-  10: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00010_87cf76694f252431.png',
-  11: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00011_11ccd1c1ee16f39d.png',
-  12: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00012_f27f891c9d30dcde.png',
-  13: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00013_f9dda5a8bca661d3.png',
-  14: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00014_4c979d8ff80a91f9.png',
-  15: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00015_f6db067a7e5f7307.png',
-  16: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00016_6fe5ea2532f54882.png',
-  17: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00017_ded82f87bb51b7ed.png',
-  18: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00018_7eb78dea0af28095.png',
-  19: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00019_8d573235481117a9.png',
-  20: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00020_02cc89b7a328ea52.png',
-  21: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00021_4c8e2335faafb3ad.png',
-  22: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00022_b855915dd9ccb209.png',
-  23: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00023_5bf90fe56808d4db.png',
-  24: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00024_cd76d3e4edb2abdb.png',
-  25: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00025_8fbc7d2685b91906.png',
-  26: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00026_b7f11aa7af9c88f6.png',
-  27: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00027_88a71ffdef00ab2d.png',
-  28: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00028_6a16145d60ff6edb.png',
-  29: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00029_8da799b44ef6f805.png',
-  30: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00030_3dfe4140d119366c.png',
-  31: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00031_70a0a9914c340a3e.png',
-  32: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00032_80ce39255d87628b.png',
-  33: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00033_4094854db2518aa1.png',
-  34: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00034_65add515481fa3de.png',
-  35: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00035_9aab10f4cf20dcc3.png',
-  36: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00036_7a49b6695a332de3.png',
-  37: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00037_9c69f674ddc14b13.png',
-  38: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00038_c1fc3be2de97d68b.png',
-  39: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00039_31f3c36fa5f07e72.png',
-  40: 'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00040_75a3d19b70826063.png',
-};
-    
     const cardNum = String(i + 1).padStart(5, '0');
     const card = document.createElement('div');
     card.className = 'art-card';
