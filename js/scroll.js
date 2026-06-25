@@ -71,7 +71,7 @@ function initGallery() {
     { subtitle: '幽影黑客', title: '共鸣接口', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00001_c9925b0d92d8df3d.png', gradient: '#7E4DF4 0%, #96AEFE 100%' },
     { subtitle: '光影幻梦', title: '人机接口', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00002_e83b4f12e55110f9.png', gradient: '#52BAE7 0%, #7E4DF4 100%' },
     { subtitle: '狂热潜行', title: '人机接口', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00003_a736937e3cd296c1.png', gradient: '#4228FF 0%, #52BAE7 100%' },
-    { subtitle: '雷霆突触', title: '反向接口', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00004_de9fe14559f8d88b.png'', gradient: '#96AEFE 0%, #7E4DF4 100%' },
+    { subtitle: '雷霆突触', title: '反向接口', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00004_de9fe14559f8d88b.png', gradient: '#96AEFE 0%, #7E4DF4 100%' },
     { subtitle: '晶化茧房', title: '线粒体力场', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00005_ba17987f4c453498.png', gradient: '#7E4DF4 0%, #4228FF 100%' },
     { subtitle: '无光轴心', title: '精密齿轮', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00006_a09a239c5903ebb8.png', gradient: '#52BAE7 0%, #96AEFE 100%' },
     { subtitle: '折射迷宫', title: '无尽齿轮', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00007_83de5d8c2255c896.png', gradient: '#4228FF 0%, #7E4DF4 100%' },
