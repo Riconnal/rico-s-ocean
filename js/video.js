@@ -1,25 +1,25 @@
 const videos = {
   a: {
-    title: "创作过程 A",
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
-    thumbnail: "linear-gradient(135deg, #7E4DF4 0%, #4228FF 100%)"
+    title: "主屏主页",
+    src: "assets/videos/main.mp4",
+    thumbnail: "linear-gradient(135deg, #e4dcf7ff 0%, #ece9ffff 100%)"
   },
   b: {
-    title: "作品展示 B",
-    src: "https://www.w3schools.com/html/movie.mp4",
-    thumbnail: "linear-gradient(135deg, #96AEFE 0%, #52BAE7 100%)"
+    title: "仪表",
+    src: "assets/videos/sub.mp4",
+    thumbnail: "linear-gradient(135deg, #d9e0f8ff 0%, #e5f7ffff 100%)"
   },
   c: {
-    title: "幕后花絮 C",
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
-    thumbnail: "linear-gradient(135deg, #52BAE7 0%, #7E4DF4 100%)"
+    title: "小憩·香氛",
+    src: "assets/videos/play.mp4",
+    thumbnail: "linear-gradient(135deg, #ceeaf6ff 0%, #e0d3ffff 100%)"
   }
 };
 
 const featuredVideo = {
-  title: "精选作品 · 幻梦之境",
-  description: "这是一段关于创作与想象的旅程，穿越虚实之间的边界，探索艺术的无限可能。",
-  src: "https://www.w3schools.com/html/movie.mp4"
+  title: "宣传视频",
+  description: "加入「跃动海洋 | LEAP OCEAN」，一同修复我们的 Moli 宇宙。",
+  src: "assets/videos/show.mp4"
 };
 
 let currentVideo = 'a';
