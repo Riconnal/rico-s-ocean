@@ -59,24 +59,24 @@ const mbtiResults = {
   "INTP": { 
     name: "数据骇客", 
     mbti: "INTP / ENTP",
-    avatar: "assets/images/careers/data-hacker.png",
+    avatar: "https://origin.picgo.net/2026/06/25/data-hacker6171c9f600383519.png",
     slogan: "规则是用来重写的，极限是用来突破的。",
     description: "跃动海洋宇宙中的极客先锋。他们热衷于破解枯燥的日常通勤数据，能从拥堵的红绿灯和起停数据中发现隐藏的算法捷径，将无序的代码重组为高效的能源。",
     outputs: [
       {
-        image: "assets/images/outputs/1-3.png",
+        image: "https://origin.picgo.net/2026/06/25/1-3cfe078039de59d47.png",
         titleCN: "破译密钥",
         titleEN: "Key Cracking",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/1-2.png",
+        image: "https://origin.picgo.net/2026/06/25/1-22b87f6c7850a987d.png",
         titleCN: "虚拟逻辑主板",
         titleEN: "Virtual Logic Board",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/1-1.png",
+        image: "https://origin.picgo.net/2026/06/25/1-142d4f540d5237b0b.png",
         titleCN: "超频芯片",
         titleEN: "Overclocking Chipset",
         rarity: "C"
@@ -86,24 +86,24 @@ const mbtiResults = {
   "ISTJ": { 
     name: "动能雕刻师", 
     mbti: "ISTJ / ESTJ",
-    avatar: "assets/images/careers/kinetic-sculptor.png",
+    avatar: "https://origin.picgo.net/2026/06/25/kinetic-sculptorf6c6c988cec33ef3.png",
     slogan: "每一焦耳的能量，都必须精准落位。",
     description: "跃动海洋宇宙中严谨的物理构造者。他们是秩序的化身，能够将汽车行驶时产生的狂暴物理动能，通过极其精密的手法，压缩、切割、打磨成稳定且高密度的能量模块。",
     outputs: [
       {
-        image: "assets/images/outputs/2-3.png",
+        image: "https://origin.picgo.net/2026/06/25/2-38fbb486b429992e6.png",
         titleCN: "高密度动能块",
         titleEN: "High-Density Kinetic Energy Block",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/2-2.png",
+        image: "https://origin.picgo.net/2026/06/25/2-211328de054cb2f5c.png",
         titleCN: "悬挂阻尼核心",
         titleEN: "Suspension Damping Core",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/2-1.png",
+        image: "https://origin.picgo.net/2026/06/25/2-1d8002ddefd96b24e.png",
         titleCN: "精密机械齿轮",
         titleEN: "Precision Mechanical Gearbox",
         rarity: "C"
@@ -113,24 +113,24 @@ const mbtiResults = {
   "INFP": { 
     name: "声浪调校员", 
     mbti: "INFP / ENFP",
-    avatar: "assets/images/careers/sound-tuner.png",
+    avatar: "https://origin.picgo.net/2026/06/25/sound-tunerd372b0c1cb64a178.png",
     slogan: "听见了吗？那是引擎在唱歌。",
     description: "跃动海洋宇宙中的艺术家与情绪捕手。他们对声音和震动极其敏感，能将内燃机的轰鸣、电机的高频电流声，甚至是风噪，转化为带有强烈情绪感染力的数字音轨。",
     outputs: [
       {
-        image: "assets/images/outputs/3-3.png",
+        image: "https://origin.picgo.net/2026/06/25/3-330dfa28ffe25faac.png",
         titleCN: "情感共鸣胶囊",
         titleEN: "Emotion Resonance Capsule",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/3-2.png",
+        image: "https://origin.picgo.net/2026/06/25/3-28fff108a03bdceec.png",
         titleCN: "声学放大阵列",
         titleEN: "Sound Amplifier Array",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/3-1.png",
+        image: "https://origin.picgo.net/2026/06/25/3-14cb8467f10df25dd.png",
         titleCN: "固化音轨",
         titleEN: "Fixed Sound Track",
         rarity: "C"
@@ -140,24 +140,24 @@ const mbtiResults = {
   "ISTP": { 
     name: "极速游侠", 
     mbti: "ISTP / ESTP",
-    avatar: "assets/images/careers/speed-ranger.png",
+    avatar: "https://origin.picgo.net/2026/06/25/speed-rangerbc55770f4236637c.png",
     slogan: "肾上腺素就是我们唯一的燃料。",
     description: "跃动海洋宇宙中追求极致推背感与离心力的发烧友。他们天生爱冒险，只有在急加速和极限过弯时才会感到兴奋。他们能从极端的G值中提取出最纯粹的爆发能量。",
     outputs: [
       {
-        image: "assets/images/outputs/4-3.png",
+        image: "https://origin.picgo.net/2026/06/25/4-305533ef8e82fd230.png",
         titleCN: "肾上腺素激活液",
         titleEN: "Adrenaline Activator",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/4-2.png",
+        image: "https://origin.picgo.net/2026/06/25/4-2bef256dec2c18450.png",
         titleCN: "空动尾翼模块",
         titleEN: "Active Tail Wing Module",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/4-1.png",
+        image: "https://origin.picgo.net/2026/06/25/4-109a594b65ed95bca.png",
         titleCN: "N₂加速瓶",
         titleEN: "N₂ Accelerator",
         rarity: "C"
@@ -167,24 +167,24 @@ const mbtiResults = {
   "INTJ": { 
     name: "星轨架构师", 
     mbti: "INTJ / ENTJ",
-    avatar: "assets/images/careers/star-architect.png",
+    avatar: "https://origin.picgo.net/2026/06/25/star-architect4e5efd034838696f.png",
     slogan: "出发之前，终点早已被我计算完毕。",
     description: "跃动海洋宇宙中极具前瞻性的宏观规划者。他们不关注当下的碎石，只注视远方的星图。他们擅长解析车辆的导航路径，将未来的行驶轨迹具象化为复杂的空间坐标产物。",
     outputs: [
       {
-        image: "assets/images/outputs/5-3.png",
+        image: "https://origin.picgo.net/2026/06/25/5-392c7dca4f5fe015a.png",
         titleCN: "空间跃迁信标",
         titleEN: "Space Migration Beacon",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/5-2.png",
+        image: "https://origin.picgo.net/2026/06/25/5-2e1947c7ad7d4cced.png",
         titleCN: "算力矩阵",
         titleEN: "Computational Matrix",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/5-1.png",
+        image: "https://origin.picgo.net/2026/06/25/5-1e28e0f3d2362d9e1.png",
         titleCN: "全息导航星图",
         titleEN: "Holographic Navigation Star Map",
         rarity: "C"
@@ -194,24 +194,24 @@ const mbtiResults = {
   "ISFP": { 
     name: "幻彩涂装师", 
     mbti: "ISFP / ESFP",
-    avatar: "assets/images/careers/color-painter.png",
+    avatar: "https://origin.picgo.net/2026/06/25/color-painter8311d369b9b890fe.png",
     slogan: "钢铁只有一种颜色，但钢铁之心不是。",
     description: "跃动海洋宇宙绝对的外观党与视觉动物。他们将沿途的霓虹灯、路灯的残影、甚至是天空的晚霞，收集并融合进喷漆罐中，致力于让整个跃动宇宙变得光怪陆离。",
     outputs: [
       {
-        image: "assets/images/outputs/6-3.png",
+        image: "https://origin.picgo.net/2026/06/25/6-33a07cd8156aaee6b.png",
         titleCN: "视网膜滤镜",
         titleEN: "Retinal Filter Glass",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/6-2.png",
+        image: "https://origin.picgo.net/2026/06/25/6-28d88762b34bd0343.png",
         titleCN: "全息痛车贴膜",
         titleEN: "Holographic Car Sticker",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/6-1.png",
+        image: "https://origin.picgo.net/2026/06/25/6-1921b1d3b2c9ffe7d.png",
         titleCN: "霓虹颜料罐",
         titleEN: "Neon Paint Can",
         rarity: "C"
@@ -221,24 +221,24 @@ const mbtiResults = {
   "ISFJ": { 
     name: "引力护航员", 
     mbti: "ISFJ / ESFJ",
-    avatar: "assets/images/careers/gravity-guardian.png",
+    avatar: "https://origin.picgo.net/2026/06/25/gravity-guardian5007b1023de7bd45.png",
     slogan: "速度固然重要，但安全抵达才是一切的前提。",
     description: "跃动海洋宇宙的守护车机系统稳定运行之后盾。当极速游侠们在狂飙时，他们负责稳定跃动宇宙的引力场。他们能从平稳的刹车和安全的驾驶行为中汲取力量。",
     outputs: [
       {
-        image: "assets/images/outputs/7-3.png",
+        image: "https://origin.picgo.net/2026/06/25/7-32c45bab3a91a1b86.png",
         titleCN: "平稳立场结晶",
         titleEN: "Stable Positional Crystal",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/7-2.png",
+        image: "https://origin.picgo.net/2026/06/25/7-2701629c5f5d6864d.png",
         titleCN: "重力定位锚点",
         titleEN: "Gravity Location Anchor",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/7-1.png",
+        image: "https://origin.picgo.net/2026/06/25/7-112dc7a2c0538619c.png",
         titleCN: "护盾发生器",
         titleEN: "Guardian Shield Generator",
         rarity: "C"
@@ -248,24 +248,24 @@ const mbtiResults = {
   "INFJ": { 
     name: "心智共鸣者", 
     mbti: "INFJ / ENFJ",
-    avatar: "assets/images/careers/mind-resonator.png",
+    avatar: "https://origin.picgo.net/2026/06/25/mind-resonatord0d9a085583c7427.png",
     slogan: "人车合一才是跃动海洋宇宙的终极浪漫。",
     description: "跃动海洋宇宙连接物理人类与数字生命的精神桥梁。他们极具洞察力，能够感知车主心情状态，将车主的疲惫、兴奋或专注，转化为抚慰人心的数字神经链接。",
     outputs: [
       {
-        image: "assets/images/outputs/8-3.png",
+        image: "https://origin.picgo.net/2026/06/25/8-35eadf996a33465f8.png",
         titleCN: "灵魂波段发生器",
         titleEN: "Soul Wave Generator",
         rarity: "UR"
       },
       {
-        image: "assets/images/outputs/8-2.png",
+        image: "https://origin.picgo.net/2026/06/25/8-275b8db37d5add89e.png",
         titleCN: "同理心结晶",
         titleEN: "Empathy Crystal",
         rarity: "R"
       },
       {
-        image: "assets/images/outputs/8-1.png",
+        image: "https://origin.picgo.net/2026/06/25/8-182ecd05cef60d21f.png",
         titleCN: "神经链接单元",
         titleEN: "Neural Link Unit",
         rarity: "C"
@@ -385,7 +385,7 @@ function showResult(type) {
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+        <img src="${data.avatar || 'https://origin.picgo.net/2026/06/25/kinetic-sculptorf6c6c988cec33ef3.png'}" alt="${data.name}">
       </div>
     </div>
     <button class="btn btn-outline" style="margin-top: 32px;" onclick="resetMBTI()">重新测试</button>
@@ -416,7 +416,7 @@ function showTypeInfo(type) {
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+        <img src="${data.avatar || 'https://origin.picgo.net/2026/06/25/kinetic-sculptorf6c6c988cec33ef3.png'}" alt="${data.name}">
       </div>
     </div>
     <div class="result-description">${data.description}</div>
@@ -465,7 +465,7 @@ function highlightResultType(type) {
         <div class="result-slogan">"${data.slogan}"</div>
       </div>
       <div class="result-avatar">
-        <img src="${data.avatar || 'assets/images/default-avatar.png'}" alt="${data.name}">
+        <img src="${data.avatar || 'https://origin.picgo.net/2026/06/25/kinetic-sculptorf6c6c988cec33ef3.png'}" alt="${data.name}">
       </div>
     </div>
     <div class="result-description">${data.description}</div>
