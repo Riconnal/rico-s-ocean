@@ -91,7 +91,7 @@ function initGallery() {
     { cn: '烙印灼烧', en: '流体火罐', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00018_7eb78dea0af28095.png'  },
     { cn: '导电陷阱', en: '喷涂罐', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00019_8d573235481117a9.png'  },
     { cn: '远古共鸣', en: '人机接口', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00020_02cc89b7a328ea52.png'  },
-    { cn: '幽影寂静', en: '超频芯片', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00021_4c8e2335faafb3ad.png''  },
+    { cn: '幽影寂静', en: '超频芯片', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00021_4c8e2335faafb3ad.png'  },
     { cn: '幻象过载', en: '超频芯片', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00022_b855915dd9ccb209.png'  },
     { cn: '熔毁边缘', en: '极限芯片', rarity: 'SR',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00023_5bf90fe56808d4db.png'  },
     { cn: '雷霆脉冲', en: '超频芯片', rarity: 'R',image:'https://origin.picgo.net/2026/06/25/mixed_item_alpha_00024_cd76d3e4edb2abdb.png'  },
