@@ -1,17 +1,17 @@
 const videos = {
   a: {
     title: "主屏主页",
-    src: "assets/videos/main.mp4",
+    src: "https://origin.picgo.net/2026/06/25/main1b5d0112418fc8e7.mp4",
     thumbnail: "linear-gradient(135deg, #e4dcf7ff 0%, #ece9ffff 100%)"
   },
   b: {
     title: "仪表",
-    src: "assets/videos/sub.mp4",
+    src: "https://origin.picgo.net/2026/06/25/sub39fc292ec19195ff.mp4",
     thumbnail: "linear-gradient(135deg, #d9e0f8ff 0%, #e5f7ffff 100%)"
   },
   c: {
     title: "小憩·香氛",
-    src: "assets/videos/play.mp4",
+    src: "https://origin.picgo.net/2026/06/25/play5019886782ca9d91.mp4",
     thumbnail: "linear-gradient(135deg, #ceeaf6ff 0%, #e0d3ffff 100%)"
   }
 };
@@ -19,7 +19,7 @@ const videos = {
 const featuredVideo = {
   title: "宣传视频",
   description: "加入「跃动海洋 | LEAP OCEAN」，一同修复我们的 Moli 宇宙。",
-  src: "assets/videos/show.mp4"
+  src: "https://origin.picgo.net/2026/06/25/out111pv84e36a6a9fad2b47.mp4"
 };
 
 let currentVideo = 'a';
